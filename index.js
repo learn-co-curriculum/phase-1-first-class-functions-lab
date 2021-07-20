@@ -3,8 +3,8 @@ let returnFirstTwoDrivers = (driversArr1) => {
     return copyDriversArray1.slice(0, 2)
 }
 
-let returnLastTwoDrivers = (lastTwoArray) => {
-    const driversArray = [...lastTwoArray]
+let returnLastTwoDrivers = (lastTwoArr) => {
+    const driversArray = [...lastTwoArr]
     return driversArray.slice(-2)
 }
 
