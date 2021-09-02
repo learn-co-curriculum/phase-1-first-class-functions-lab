@@ -16,9 +16,14 @@ a look at how we can use functions as first-class objects to pass them around,
 store them in variables and data structures, and return them from other
 functions.
 
-+ `returnFirstTwoDrivers()` — Declare a variable with `const` that is assigned
-  an anonymous function. The assigned function should accept an array of drivers
-  as an argument and return the **first** two drivers in the array.
+## Instructions
+
+Using the tests to guide you, create the following deliverables:
+
++ `returnFirstTwoDrivers()` — Declare the variable `returnFirstTwoDrivers` with
+  `const` and assign an anonymous function to it. The assigned function should
+  accept an array of drivers as an argument and return the **first** two drivers
+  in the array.
 + `returnLastTwoDrivers()` — Declare a variable with `const` that is assigned an
   anonymous function. The assigned function should accept an array of drivers as
   an argument and return the **last** two drivers in the array.
