@@ -1,19 +1,19 @@
 describe('index.js', function () {
-  const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+  const drivers = ['Antonia', 'Nuru', 'Amari', 'Claudia'];
 
   afterEach(function () {
-    expect(drivers, 'MAKE SURE YOUR ARRAY MANIPULATIONS ARE NON-DESTRUCTIVE').to.eql(['Sally', 'Bob', 'Freddy', 'Claudia']);
+    expect(drivers, 'MAKE SURE YOUR ARRAY MANIPULATIONS ARE NON-DESTRUCTIVE').to.eql(['Antonia', 'Nuru', 'Amari', 'Mo']);
   });
 
   describe('returnFirstTwoDrivers()', function () {
     it('should return a new array containing the first two drivers from the passed-in array', function () {
-      expect(returnFirstTwoDrivers(drivers)).to.eql(['Sally', 'Bob']);
+      expect(returnFirstTwoDrivers(drivers)).to.eql(['Antonia', 'Nuru']);
     });
   });
 
   describe('returnLastTwoDrivers()', function () {
     it('should return an array of the last two drivers', function () {
-      expect(returnLastTwoDrivers(['Sally', 'Bob', 'Freddy', 'Claudia'])).to.eql(['Freddy', 'Claudia']);
+      expect(returnLastTwoDrivers(['Antonia', 'Nuru', 'Amari', 'Mo'])).to.eql(['Amari', 'Mo']);
     });
   });
 
@@ -27,9 +27,9 @@ describe('index.js', function () {
     });
 
     it('allows us to invoke either function from the array', function () {
-      expect(selectingDrivers[0](drivers)).to.eql(['Sally', 'Bob']);
+      expect(selectingDrivers[0](drivers)).to.eql(['Antonia', 'Nuru']);
 
-      expect(selectingDrivers[1](drivers)).to.eql(['Freddy', 'Claudia']);
+      expect(selectingDrivers[1](drivers)).to.eql(['Amari', 'Mo']);
     });
   });
 
@@ -69,11 +69,11 @@ describe('index.js', function () {
 
   describe('selectDifferentDrivers(arrayOfDrivers, function)', function () {
     it('returns the first two drivers when passed returnFirstTwoDrivers() as the second argument', function () {
-      expect(selectDifferentDrivers(drivers, returnFirstTwoDrivers)).to.eql(['Sally', 'Bob']);
+      expect(selectDifferentDrivers(drivers, returnFirstTwoDrivers)).to.eql(['Antonia', 'Nuru']);
     });
 
     it('returns the last two drivers when passed returnLastTwoDrivers() as the second argument', function () {
-      expect(selectDifferentDrivers(drivers, returnLastTwoDrivers)).to.eql(['Freddy', 'Claudia']);
+      expect(selectDifferentDrivers(drivers, returnLastTwoDrivers)).to.eql(['Amari', 'Mo']);
     });
   });
 });
