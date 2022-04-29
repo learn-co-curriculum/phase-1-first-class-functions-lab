@@ -16,17 +16,33 @@ a look at how we can use functions as first-class objects to pass them around,
 store them in variables and data structures, and return them from other
 functions.
 
+For this lab, you will continue working on functions for our scooter-taxi
+client, Scuber.
+
 ## Instructions
 
 Using the tests to guide you, create the following deliverables:
 
 - `returnFirstTwoDrivers()` — Declare the variable `returnFirstTwoDrivers` with
   `const` and assign an anonymous function to it. The assigned function should
-  accept an array of drivers as an argument and return the **first** two drivers
-  in the array.
+  take one argument, an array containing the names of Scuber's drivers, and
+  return a new array containing the **first** two drivers in the array:
+
+```js
+returnFirstTwoDrivers(['Antonia', 'Nuru', 'Amari', 'Mo'])
+// => ['Antonia', 'Nuru']
+```
+
 - `returnLastTwoDrivers()` — Declare a variable with `const` that is assigned an
-  anonymous function. The assigned function should accept an array of drivers as
-  an argument and return the **last** two drivers in the array.
+  anonymous function. The assigned function should take one argument, an array
+  containing the names of Scuber's drivers, and return a new array containing
+  the **last** two drivers in the array:
+
+```js
+returnLastTwoDrivers(['Antonia', 'Nuru', 'Amari', 'Mo'])
+// => ['Amari', 'Mo']
+```
+
 - `selectingDrivers` — This is an array containing two elements: the two
   functions that we previously defined (`returnFirstTwoDrivers()` and
   `returnLastTwoDrivers()`).
@@ -44,9 +60,10 @@ Using the tests to guide you, create the following deliverables:
   such a way that the new `fareTripler()` function accepts a fare as its lone
   argument and triples it.
 - `selectDifferentDrivers()` — This function takes two arguments, an array of
-  `drivers` and either the `returnFirstTwoDrivers()` or `returnLastTwoDrivers()`
-  function. Based on these two arguments, `selectDifferentDrivers()` will return
-  either the first two drivers or the last two drivers.
+  the names of Scuber's `drivers` and either the `returnFirstTwoDrivers()` or
+  `returnLastTwoDrivers()` function. Based on these two arguments,
+  `selectDifferentDrivers()` will return either the first two drivers or the
+  last two drivers.
 
 ## Resources
 
