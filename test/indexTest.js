@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 describe('index.js', function () {
   const drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
 
