@@ -21,6 +21,10 @@ client, Scuber.
 
 ## Instructions
 
+**Fork and clone** this lab into your local environment. Navigate into its
+directory in the terminal, then run `code .` to open the files in Visual Studio
+Code.
+
 Using the tests to guide you, create the following deliverables:
 
 - `returnFirstTwoDrivers()` — Declare the variable `returnFirstTwoDrivers` with
@@ -64,6 +68,9 @@ returnLastTwoDrivers(['Antonia', 'Nuru', 'Amari', 'Mo'])
   `returnLastTwoDrivers()` function. Based on these two arguments,
   `selectDifferentDrivers()` will return either the first two drivers or the
   last two drivers.
+
+When you're done, remember to commit and push your changes up to GitHub, then
+submit your work to Canvas using CodeGrade.
 
 ## Resources
 
