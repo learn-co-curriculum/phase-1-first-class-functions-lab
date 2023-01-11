@@ -13,3 +13,15 @@ function createFareMultiplier(riders) {
         return Math.abs(fare * riders)
     }
 }
+
+const fareDoubler = function(fare){
+    return Math.abs(fare*2)
+}
+
+const fareTripler = function(fare){
+    return Math.abs(fare*3)
+}
+
+function selectDifferentDrivers(drivers, funct){
+    return funct(drivers);
+}
